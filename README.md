@@ -141,7 +141,7 @@ InSpec makes it easy to run your tests wherever you need. More options listed he
 
 ```
 # Clone Inspec Profile
-$ git clone https://github.cms.gov/mitre-dev/cms-ars3.1-mod-cis-aws-foundations-baseline
+$ git clone https://github.cms.gov/mitre-dev/cms-ars3.1-cis-aws-foundations-baseline
 
 # Install Gems
 $ bundle install
