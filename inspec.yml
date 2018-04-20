@@ -9,6 +9,6 @@ version: 0.1.0
 
 depends:
 - name: cis-aws-foundations-baseline
-  git: https://github.cms.gov/mitre-dev/cis-aws-foundations-baseline.git
+  git: https://github.cms.gov/ispg-review/cis-aws-foundations-baseline.git
   branch: master
   
