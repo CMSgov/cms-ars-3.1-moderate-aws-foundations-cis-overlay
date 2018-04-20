@@ -6,10 +6,9 @@ copyright_email:
 license: Apache-2.0
 summary: "CMS ARS3.1 Overlay against CIS AWS Foundations Benchmark Baseline InSpec Compliance Profile"
 version: 0.1.0
-supports:
 
 depends:
 - name: cis-aws-foundations-baseline
-  git: https://github.com/aaronlippold/cis-aws-foundations-baseline.git
+  git: https://github.cms.gov/mitre-dev/cis-aws-foundations-baseline.git
   branch: master
   
