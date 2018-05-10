@@ -34,14 +34,16 @@ If needed - install inspec on your 'runner' system - i.e. your orchestration ser
 
 You will need to download the InSpec Profile to your `runner` system. You can do this via `git` or the GitHub Web interface, etc.
 
-  a. `git clone https://github.cms.gov/ispg-review/cms-ars3.1-cis-aws-foundations-baseline`, or
+  a. `git clone https://github.cms.gov/ispg-review/cms-ars3.1-cis-aws-foundations-baseline`, or 
+  
   b. Save a Zip or tar.gz copy of the master branch from the `Clone or Download` button of this project
 
 ### Setting up dependencies in your Ruby and InSpec Environments
 
 The profile uses Bundler to manage needed dependencies - so you will need to installed the needed gems via bundler before you run the profile. Change directories to your your cloned inspec profile then do a `bundle install`. 
 
-  a. `cd cms-ars3.1-cis-aws-foundations-baseline`
+  a. `cd cms-ars3.1-cis-aws-foundations-baseline` 
+  
   b. `bundle install`
 
 ### Getting MFA Aware AWS Access, Secret and Session Tokens
