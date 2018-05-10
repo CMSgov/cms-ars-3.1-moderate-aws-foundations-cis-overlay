@@ -162,7 +162,8 @@ The script will inspect aws regions: us-east-1, us-east-2, us-west-1, us-west-2 
 - sns_topics
 - sns_subscriptions
 ```
-The generated attributes __must be reviewed carefully__ and can be placed in the attributes.yaml file required for the inspec run.
+The generated attributes __must be reviewed carefully__. 
+Only __valid__ channels and sns items should be placed in the attributes.yml file.
 
 Usage:
 ```
@@ -186,7 +187,8 @@ $ export AWS_SESSION_TOKEN=session_token
 
 # Run the `generate_attributes.rb` 
 $ ruby generate_attributes.rb
-# The generated attributes data __must be reviewed carefully__ and can be placed in the attributes.yaml file for the inspec run to be as accurate as possible for your specific environment and assets.
+# The generated attributes __must be reviewed carefully__. 
+# Only __valid__ channels and sns items should be placed in the attributes.yml file.
 
 # To run profile locally and directly from Github
 $ inspec exec /path/to/profile -t aws:// --attrs=attributes.yml
