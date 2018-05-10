@@ -28,13 +28,21 @@ If needed - install inspec on your 'runner' system - i.e. your orchestration ser
   
   b. If you already have a ruby environment (`2.4.x`) installed on your 'runner' system - you can just do a simple `gem install inspec`, or 
   
-  c. You can use the AWS SSM suite to run InSpec on your AWS assets - see the InSpec + SSM documation here: https://aws.amazon.com/blogs/mt/using-aws-systems-manager-to-run-compliance-scans-using-inspec-by-chef/ 
+  c. You can use the AWS SSM suite to run InSpec on your AWS assets - see the InSpec + SSM documation here: https://aws.amazon.com/blogs/mt/using-aws-systems-manager-to-run-compliance-scans-using-inspec-by-chef/
+  
+### Get the CMS AWS Foundations Baseline
+
+You will need to download the InSpec Profile to your `runner` system. You can do this via `git` or the GitHub Web interface, etc.
+
+  a. `git clone https://github.cms.gov/ispg-review/cms-ars3.1-cis-aws-foundations-baseline`, or
+  b. Save a Zip or tar.gz copy of the master branch from the `Clone or Download` button of this project
 
 ### Setting up dependencies in your Ruby and InSpec Environments
 
-The profile uses Bundler to manage needed dependencies - so you will need to installed the needed gems via bundler before you run the profile.  
+The profile uses Bundler to manage needed dependencies - so you will need to installed the needed gems via bundler before you run the profile. Change directories to your your cloned inspec profile then do a `bundle install`. 
 
-  a. `bundle install`
+  a. `cd cms-ars3.1-cis-aws-foundations-baseline`
+  b. `bundle install`
 
 ### Getting MFA Aware AWS Access, Secret and Session Tokens
 
