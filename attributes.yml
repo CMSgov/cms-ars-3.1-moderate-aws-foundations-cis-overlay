@@ -3,20 +3,20 @@
 # This is an example of an attributes file that can be passed to the profile
 # to override the defaults of the attributes defined in each of the tests.
 # You can use this to automatically adjust your tests when using automation or
-# progromatic deployment or validation of differnt deployment patterns without
+# programatic deployment or validation of differnt deployment patterns without
 # having to adjust the core profile.
 
-# The followiing attributes must be set to accepted/documented values which is
+# The following attributes must be set to accepted/documented values which is
 # then verified by the applicable controls.
 
 # default aws key age (1.4)
-aws_key_age: 60
+aws_key_age: 60 # <-- DO NOT EDIT - aligned to CMS ARS 3.1 policy
 
 # Make the password length (1.9)
-pwd_length: 12
+pwd_length: 12  # <-- DO NOT EDIT - aligned to CMS ARS 3.1 policy
 
 # make the aws_cred_age an attribute (1.11)
-aws_cred_age: 60
+aws_cred_age: 60  # <-- DO NOT EDIT - aligned to CMS ARS 3.1 policy
 
 # description: 'default aws region',
 default_aws_region: 'us-east-1'
