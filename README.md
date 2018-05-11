@@ -196,6 +196,8 @@ $ inspec exec /path/to/profile -t aws:// --attrs=attributes.yml
 # To run profile locally and directly from Github with cli & json output 
 $ inspec exec /path/to/profile -t aws:// --attrs=attributes.yml --reporter cli json:aws-results.json
 
+# To run profile locally and directly from Github with cli & json output, in a specific region with a specific AWS profile
+$ inspec exec /path/to/profile -t aws://us-east-1/<mycreds-profile> --attrs=attributes.yml --reporter cli json:aws-results.json
 ```
 
 ### Run individual controls
