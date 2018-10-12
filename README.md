@@ -57,7 +57,8 @@ You will need to ensure your AWS CLI environment has the right system environmen
 
 In the CMS AWS environments - and any AWS MFA enabled enviroment - you need to use `derived credentials` to use the CLI. Your default `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` will not satisfy the MFA Policies in the CMS AWS environments. 
 
-The AWS documentation is here: https://docs.aws.amazon.com/cli/latest/reference/sts/get-session-token.html
+- The AWS documentation is here: https://docs.aws.amazon.com/cli/latest/reference/sts/get-session-token.html
+- The AWS profile documentation is here: https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
 A useful bash script for automating this is here: https://gist.github.com/dinvlad/d1bc0a45419abc277eb86f2d1ce70625
 
