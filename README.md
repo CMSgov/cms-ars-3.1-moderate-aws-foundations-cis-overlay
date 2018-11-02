@@ -11,7 +11,7 @@ InSpec is an open-source run-time framework and rule language used to specify co
 
 ## Requirements
 
-- [InSpec](http://inspec.io/) at least version 2.1
+- [InSpec](http://inspec.io/) at least version 3.x
 - [AWS CLI](https://aws.amazon.com/cli/) at least version 2.x
 
 ### Tested Platforms
