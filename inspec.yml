@@ -5,10 +5,25 @@ copyright:
 copyright_email: 
 license: Apache-2.0
 summary: "CMS ARS3.1 Overlay against CIS AWS Foundations Benchmark Baseline InSpec Compliance Profile"
-version: 0.1.0
+version: 0.2.0
 
 depends:
 - name: cis-aws-foundations-baseline
   git: https://github.cms.gov/ispg-review/cis-aws-foundations-baseline.git
   branch: master
   
+attributes:
+  - name: aws_key_age
+    description: 'The maximum allowed key age'
+    type: numeric
+    default: 60
+
+  - name: pwd_length
+    description: 'Required password length'
+    type: numeric
+    default: 12
+
+  - name: aws_cred_age
+    description: 'The maximum allowed IAM account age'
+    type: numeric
+    default: 60
