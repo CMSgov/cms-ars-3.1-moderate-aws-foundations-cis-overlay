@@ -5,7 +5,7 @@ Based on Inspec profile for CIS Amazon Web Services Foundations Benchmark v1.1.0
 
 ## Description
 
-This [InSpec](https://github.com/chef/inspec) compliance profile implements the [CIS AWS Foundations Benchmark](https://github.cms.gov/ispg-review/cis-aws-foundations-baseline) in an automated way to provide security best-practice tests in an AWS environment.
+This [InSpec](https://github.com/chef/inspec) compliance profile implements the [CIS AWS Foundations Benchmark](https://github.cms.gov/ispg/cis-aws-foundations-baseline) in an automated way to provide security best-practice tests in an AWS environment.
 
 InSpec is an open-source run-time framework and rule language used to specify compliance, security, and policy requirements for testing any node in your infrastructure.
 
@@ -34,7 +34,7 @@ If needed - install inspec on your 'runner' system - i.e. your orchestration ser
 
 You will need to download the InSpec Profile to your `runner` system. You can do this via `git` or the GitHub Web interface, etc.
 
-  a. `git clone https://github.cms.gov/ispg-review/cms-ars3.1-cis-aws-foundations-baseline`, or 
+  a. `git clone https://github.cms.gov/ispg/cms-ars3.1-cis-aws-foundations-baseline`, or 
   
   b. Save a Zip or tar.gz copy of the master branch from the `Clone or Download` button of this project
 
