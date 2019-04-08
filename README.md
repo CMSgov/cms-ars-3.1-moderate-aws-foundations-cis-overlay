@@ -185,6 +185,7 @@ $ bundle install
 $ export AWS_ACCESS_KEY_ID=key-id
 $ export AWS_SECRET_ACCESS_KEY=access-key
 $ export AWS_SESSION_TOKEN=session_token
+$ export AWS_REGION=us-west-1
 
 # Run the `generate_attributes.rb` 
 $ ruby generate_attributes.rb
