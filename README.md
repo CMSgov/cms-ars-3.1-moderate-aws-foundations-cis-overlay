@@ -45,6 +45,10 @@ The profile uses Bundler to manage needed dependencies - so you will need to ins
   a. `cd cms-ars3.1-cis-aws-foundations-baseline` 
   
   b. `bundle install`
+  
+### Minimum Permissions needed to Run this Profile
+
+The IAM account used to run this profile against the AWS environment needs to attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy` 
 
 ### Getting MFA Aware AWS Access, Secret and Session Tokens
 
