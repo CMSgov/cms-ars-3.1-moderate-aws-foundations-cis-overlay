@@ -1,4 +1,4 @@
-# cms-ars3.1-cis-aws-foundations-baseline
+# cms-ars-3.1-cis-aws-foundations-baseline
 CMS ARS 3.1 Overlay InSpec Validation Profile for CIS AWS Foundations Benchmark
 
 Based on Inspec profile for CIS Amazon Web Services Foundations Benchmark v1.1.0 - 11-29-2016
