@@ -87,7 +87,7 @@ sns_subscriptions:
       endpoint: "endpoint_value"
       owner: "owner_value"
       protocol: "protocol_value"`
-```
+````
 
 ## Generate Attributes
 
