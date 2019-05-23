@@ -6,13 +6,9 @@ It is intended and recommended that InSpec and this profile overlay be run from 
 
 __For the best security of the runner, always install on the runner the _latest version_ of InSpec and supporting Ruby language components.__ 
 
-Latest versions and installation options are available at the [InSpec](http://inspec.io/) site.
+Latest versions and installation options are available at the [InSpec](http://inspec.io/) site. Alternatively, you can use the AWS SSM suite to run InSpec on your AWS assets. More information can be found on the [AWS SSM](https://aws.amazon.com/blogs/mt/using-aws-systems-manager-to-run-compliance-scans-using-inspec-by-chef/) site.
 
-Alternatively, you can use the AWS SSM suite to run InSpec on your AWS assets. More information can be found on the [AWS SSM](https://aws.amazon.com/blogs/mt/using-aws-systems-manager-to-run-compliance-scans-using-inspec-by-chef/) site.
-
-Additionally, this overlay requires the AWS Command Line Interface (CLI) which is available at the [AWS CLI](https://aws.amazon.com/cli/) site.
-
-
+This overlay also requires the AWS Command Line Interface (CLI) which is available at the [AWS CLI](https://aws.amazon.com/cli/) site.
 
 The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
 
