@@ -92,7 +92,7 @@ sns_subscriptions:
 ## Generate Attributes
 
 The generate_attributes.rb file within this repository may be used to generate part of the attributes required for the profile.
-The script will inspect AWS regions: us-east-1, us-east-2, us-west-1, us-west-2 to generate the following attributes to STDOUT.
+The script will inspect AWS regions (us-east-1, us-east-2, us-west-1, us-west-2) to generate the following attributes to STDOUT.
 
 ```
 - config_delivery_channels
