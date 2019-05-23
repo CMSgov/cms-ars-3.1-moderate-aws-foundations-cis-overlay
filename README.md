@@ -53,40 +53,40 @@ aws_actions_performing_instance_ids: []
 
 config_service:
     us-east-1: 
-      s3_bucket_name: 's3_bucket_name_value'
-      sns_topic_arn: 'sns_topic_arn_value'
+      s3_bucket_name: ''
+      sns_topic_arn: ''
     us-east-2: 
-      s3_bucket_name:  's3_bucket_name_value'
-      sns_topic_arn: 'sns_topic_arn_value'
+      s3_bucket_name:  ''
+      sns_topic_arn: ''
     us-west-1: 
-      s3_bucket_name:  's3_bucket_name_value'
-      sns_topic_arn: 'sns_topic_arn_value'
+      s3_bucket_name:  ''
+      sns_topic_arn: ''
     us-west-2: 
-      s3_bucket_name:  's3_bucket_name_value'
-      sns_topic_arn: 'sns_topic_arn_value'
+      s3_bucket_name:  ''
+      sns_topic_arn: ''
 
 
 # Description: SNS topics list and details in all relevant regions
 
 sns_topics: 
     topic_arn1 : 
-      owner : 'owner_value'
-      region : 'region_value'
+      owner : ''
+      region : ''
     topic_arn2 :
-      owner : 'owner_value'
-      region : 'region_value'
+      owner : ''
+      region : ''
 
 # Description: SNS subscription list and details in all relevant regions
 
 sns_subscriptions: 
     subscription_arn1: 
-      endpoint: 'endpoint_value'
-      owner: 'owner_value'
-      protocol: 'protocol_value'
+      endpoint: ''
+      owner: ''
+      protocol: ''
     subscription_arn2: 
-      endpoint: 'endpoint_value'
-      owner: 'owner_value'
-      protocol: 'protocol_value'
+      endpoint: ''
+      owner: ''
+      protocol: ''
 ````
 
 ## Generate Attributes
