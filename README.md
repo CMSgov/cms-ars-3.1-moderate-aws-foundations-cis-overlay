@@ -10,7 +10,7 @@ Latest versions and installation options are available at the [InSpec](http://in
 
 This overlay also requires the AWS Command Line Interface (CLI) which is available at the [AWS CLI](https://aws.amazon.com/cli/) site.
 
-The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/). These attributes are generated if the profile is used with the Terraform [hardening receipe](https://github.com/aaronlippold/cis-aws-foundations-hardening) with kitchen-terraform. Instructions on how to generate these attributes is also provided in the [Generate Attributes](https://github.cms.gov/ISPG/cms-ars-3.1-moderate-aws-foundations-cis-overlay/tree/readme_update#Generate-Attributes) section below.
+The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/). These attributes are generated if the profile is used with the Terraform [hardening receipe](https://github.com/aaronlippold/cis-aws-foundations-hardening) with kitchen-terraform. Instructions on how to generate these attributes is also provided in the [Generate Attributes](#Generate-Attributes) section below.
 
 ````
 # AWS key age (1.4)
