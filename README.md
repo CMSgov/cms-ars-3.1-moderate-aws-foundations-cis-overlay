@@ -111,12 +111,22 @@ Prior to running this overlay, certain credentials and permissions need to be es
 
 1. The IAM account used to run this profile against the AWS environment needs to attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy` 
 
-2. If running in an AWS Multi-Factor Authentication environment, derived credentials are needed to use the AWS CLI. Default `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` will not satisfy the MFA Policies in the CMS AWS environments. To do this, the AWS CLI environment needs to have the right system environment variables set with your AWS region and credentials and session key. InSpec supports the following standard AWS variables:
+2. If running in an AWS Multi-Factor Authentication (MFA) environment, derived credentials are needed to use the AWS CLI. Default `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` will not satisfy the MFA Policies in the CMS AWS environments. To do this, the AWS CLI environment needs to have the right system environment variables set with your AWS region and credentials and session key. InSpec supports the following standard AWS variables:
 
 - `AWS_REGION`
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `AWS_SESSION_TOKEN`
+
+The environment variables can be set using the following commands.
+
+````
+# Set required ENV variables
+$ export AWS_ACCESS_KEY_ID=<key-id>
+$ export AWS_SECRET_ACCESS_KEY=<access-key>
+$ export AWS_SESSION_TOKEN=<session_token>
+$ export AWS_REGION='<region>'
+````
 
 More information about these credentials and permissions can be found in the [AWS](https://docs.aws.amazon.com/cli/latest/reference/sts/get-session-token.html) documentation and [AWS Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html) documentation.
 
@@ -149,41 +159,7 @@ cd ../<overlay-repo>
 git pull
 bundle install
 cd ..
-inspec exec [overlay-name]-vendor-product-version-edition[-stig|cis-]-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> [-t <transport_protocol>://<hostname>:<port> --user=<username> --password=<password>] --reporter cli json:<filename>.json
-```
-
-
-
-## Usage
-
-InSpec makes it easy to run your tests wherever you need. More options listed here: [InSpec cli](http://inspec.io/docs/reference/cli/)
-
-```
-# Clone Inspec Profile
-$ git clone https://github.cms.gov/ispg-review/cms-ars3.1-cis-aws-foundations-baseline
-
-# Install Gems
-$ bundle install
-
-# Set required ENV variables
-$ export AWS_ACCESS_KEY_ID=key-id
-$ export AWS_SECRET_ACCESS_KEY=access-key
-$ export AWS_SESSION_TOKEN=session_token
-$ export AWS_REGION=us-west-1
-
-# Run the `generate_attributes.rb` 
-$ ruby generate_attributes.rb
-# The generated attributes __must be reviewed carefully__. 
-# Only __valid__ channels and sns items should be placed in the attributes.yml file.
-
-# To run profile locally and directly from Github
-$ inspec exec /path/to/profile -t aws:// --attrs=attributes.yml
-
-# To run profile locally and directly from Github with cli & json output 
-$ inspec exec /path/to/profile -t aws:// --attrs=attributes.yml --reporter cli json:aws-results.json
-
-# To run profile locally and directly from Github with cli & json output, in a specific region with a specific AWS profile
-$ inspec exec /path/to/profile -t aws://us-east-1/<mycreds-profile> --attrs=attributes.yml --reporter cli json:aws-results.json
+inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --attrs=<path_to_your_attributes_file/name_of_your_attributes_file.yml> --target aws://<hostname>:<port> --user=<username> --password=<password> --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Authors
