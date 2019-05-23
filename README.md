@@ -106,7 +106,7 @@ The generated attributes __must be reviewed carefully__. Only __valid__ channels
 ```
 
 ## Running This Overlay
-Prior to running this overlay, certain credentials and permissions need to be established for AWS CLI to work properly. 
+Prior to running this overlay, certain credentials and permissions need to be established for the AWS CLI to work properly. 
 
 1. The IAM account used to run this profile against the AWS environment needs to attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy` 
 
