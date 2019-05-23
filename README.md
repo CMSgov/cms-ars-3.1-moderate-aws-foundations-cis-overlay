@@ -108,7 +108,7 @@ The generated attributes __must be reviewed carefully__. Only __valid__ channels
 ## Running This Overlay
 Prior to running this overlay, certain credentials and permissions need to be established for the AWS CLI to work properly. 
 
-1. The IAM account used to run this profile against the AWS environment needs to attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy` 
+1. The IAM account used to run this profile against the AWS environment needs to be attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy`. 
 
 2. If running in an AWS Multi-Factor Authentication (MFA) environment, derived credentials are needed to use the AWS CLI. Default `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` will not satisfy the MFA Policies in the CMS AWS environments. To do this, the AWS CLI environment needs to have the right system environment variables set with your AWS region and credentials and session key. InSpec supports the following standard AWS variables:
 
