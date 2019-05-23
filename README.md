@@ -99,9 +99,8 @@ The script will inspect AWS regions (us-east-1, us-east-2, us-west-1, us-west-2)
 - sns_topics
 - sns_subscriptions
 ```
-The generated attributes __must be reviewed carefully__. Only __valid__ channels and sns items should be placed in the attributes.yml file.
+The generated attributes __must be reviewed carefully__. Only __valid__ channels and sns items should be placed in the attributes.yml file. Use the following command to run the script.
 
-Usage:
 ```
   ruby generate_attributes.rb
 ```
