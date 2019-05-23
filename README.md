@@ -56,13 +56,13 @@ config_service:
       s3_bucket_name: ''
       sns_topic_arn: ''
     us-east-2: 
-      s3_bucket_name:  ''
+      s3_bucket_name: ''
       sns_topic_arn: ''
     us-west-1: 
-      s3_bucket_name:  ''
+      s3_bucket_name: ''
       sns_topic_arn: ''
     us-west-2: 
-      s3_bucket_name:  ''
+      s3_bucket_name: ''
       sns_topic_arn: ''
 
 
