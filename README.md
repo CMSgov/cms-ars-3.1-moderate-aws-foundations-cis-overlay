@@ -1,5 +1,5 @@
 # cms-ars-3.1-moderate-aws-foundations-cis-overlay
-InSpec profile overlay to validate the secure configuration of vendor Amazon Web Services against [CIS'](https://www.cisecurity.org/cis-benchmarks/) Amazon Web Services Foundations Benchmark Version [1.1.0] tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categorized as Moderate.
+InSpec profile overlay to validate the secure configuration of vendor Amazon Web Services against [CIS'](https://www.cisecurity.org/cis-benchmarks/) Amazon Web Services Foundations Benchmark Version 1.1.0 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categorized as Moderate.
 
 ## Getting Started  
 It is intended and recommended that InSpec and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target.
@@ -13,80 +13,80 @@ This overlay also requires the AWS Command Line Interface (CLI) which is availab
 The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/). These attributes are generated if the profile is used with the Terraform [hardening receipe](https://github.com/aaronlippold/cis-aws-foundations-hardening) with kitchen-terraform. Instructions on how to generate these attributes is also provided in the [Generate Attributes](#Generate-Attributes) section below.
 
 ````
-# AWS key age (1.4)
-aws_key_age: 60
+# Description: AWS key age (e.g., 60)
+aws_key_age: 
 
-# Make the password length (1.9)
-pwd_length: 12
+# Description: Make the password length (e.g., 12)
+pwd_length: 
 
-# Make the aws_cred_age an attribute (1.11)
-aws_cred_age: 60
+# Description: Make the aws_cred_age an attribute (e.g., 60)
+aws_cred_age: 
 
-# Description: 'default aws region'
-default_aws_region: 'us-east-1'
+# Description: Default AWS region (e.g., 'us-east-1')
+default_aws_region: ''
 
-# Description: 'default aws region'
-aws_region: 'us-east-1'
+# Description: AWS region (e.g., 'us-east-1')
+aws_region: ''
 
-# Description: 'iam manager role name'
-iam_manager_role_name: "iam_manager_role_name"
+# Description: IAM manager role name 
+iam_manager_role_name: ''
 
-# Description: 'iam master role name'
-iam_master_role_name: "iam_master_role_name"
+# Description: IAM master role name
+iam_master_role_name: ''
 
-# Description: 'iam manager user name'
-iam_manager_user_name: "iam_manager_user_name"
+# Description: IAM manager user name
+iam_manager_user_name: ''
 
-# Description: 'iam master user name'
-iam_master_user_name: "iam_master_user_name"
+# Description: IAM master user name
+iam_master_user_name: ''
 
-# Description: 'iam manager policy name'
-iam_manager_policy_name: "iam_manager_policy"
+# Description: IAM manager policy name
+iam_manager_policy_name: ''
 
-# Description: 'iam master policy name'
-iam_master_policy_name: "iam_master_policy"
+# Description: IAM master policy name
+iam_master_policy_name: ''
 
-# Description: 'list of instances that have specific roles'
-aws_actions_performing_instance_ids: ["aws_access_instance_id"]
+# Description: List of instances that have specific roles (e.g., ['aws_access_instance_id']) 
+aws_actions_performing_instance_ids: []
 
-# Description: 'Config service list and settings in all relevant regions'
+# Description: Config service list and settings in all relevant regions
 
 config_service:
     us-east-1: 
-      s3_bucket_name: "s3_bucket_name_value"
-      sns_topic_arn: "sns_topic_arn_value"
+      s3_bucket_name: 's3_bucket_name_value'
+      sns_topic_arn: 'sns_topic_arn_value'
     us-east-2: 
-      s3_bucket_name:  "s3_bucket_name_value"
-      sns_topic_arn: "sns_topic_arn_value"
+      s3_bucket_name:  's3_bucket_name_value'
+      sns_topic_arn: 'sns_topic_arn_value'
     us-west-1: 
-      s3_bucket_name:  "s3_bucket_name_value"
-      sns_topic_arn: "sns_topic_arn_value"
+      s3_bucket_name:  's3_bucket_name_value'
+      sns_topic_arn: 'sns_topic_arn_value'
     us-west-2: 
-      s3_bucket_name:  "s3_bucket_name_value"
-      sns_topic_arn: "sns_topic_arn_value"
+      s3_bucket_name:  's3_bucket_name_value'
+      sns_topic_arn: 'sns_topic_arn_value'
 
 
-# Description: 'SNS topics list and details in all relevant regions'
+# Description: SNS topics list and details in all relevant regions
 
 sns_topics: 
     topic_arn1 : 
-      owner : "owner_value"
-      region : "region_value"
+      owner : 'owner_value'
+      region : 'region_value'
     topic_arn2 :
-      owner : "owner_value"
-      region : "region_value"`
+      owner : 'owner_value'
+      region : 'region_value'
 
-# Description: 'SNS subscription list and details in all relevant regions'
+# Description: SNS subscription list and details in all relevant regions
 
 sns_subscriptions: 
     subscription_arn1: 
-      endpoint: "endpoint_value"
-      owner: "owner_value"
-      protocol: "protocol_value"
+      endpoint: 'endpoint_value'
+      owner: 'owner_value'
+      protocol: 'protocol_value'
     subscription_arn2: 
-      endpoint: "endpoint_value"
-      owner: "owner_value"
-      protocol: "protocol_value"`
+      endpoint: 'endpoint_value'
+      owner: 'owner_value'
+      protocol: 'protocol_value'
 ````
 
 ## Generate Attributes
