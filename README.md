@@ -12,7 +12,7 @@ This overlay also requires the AWS Command Line Interface (CLI) which is availab
 
 The following attributes must be configured in an attributes file for the profile to run correctly. More information about InSpec attributes can be found in the [InSpec Profile Documentation](https://www.inspec.io/docs/reference/profiles/).
 
-These attributes are generated if the profile is used with the Terraform hardening receipe (https://github.com/aaronlippold/cis-aws-foundations-hardening) with kitchen-terraform.
+These attributes are generated if the profile is used with the Terraform [hardening receipe](https://github.com/aaronlippold/cis-aws-foundations-hardening) with kitchen-terraform.
 
 Instructions on how to generate these attributes is also provided in the [Generate Attributes] section below.
 
