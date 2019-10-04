@@ -107,6 +107,16 @@ The generated attributes __must be reviewed carefully__. Only __valid__ channels
   ruby generate_attributes.rb
 ```
 
+## Additional optional attributes the user may add to their attributes file:
+
+```
+#description: 'list of buckets exempted from inspection',
+exception_bucket_list: ["exception_bucket_name"]
+
+# description: 'list of security groups exempted from inspection',
+exception_security_group_list: ["exception_security_group_name"]
+```
+
 ## Running This Overlay
 Prior to running this overlay, certain credentials and permissions need to be established for the AWS CLI to work properly. 
 
