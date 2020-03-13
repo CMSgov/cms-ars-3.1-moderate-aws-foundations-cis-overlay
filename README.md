@@ -155,7 +155,7 @@ When the __"runner"__ host uses this profile overlay for the first time, follow 
 mkdir profiles
 cd profiles
 git clone https://github.com/mitre/cis-aws-foundations-baseline.git
-git clone https://github.cms.gov/ISPG/cms-ars-3.1-moderate-aws-foundations-cis-overlay.git
+git clone https://github.cms.gov/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay.git
 cd cms-ars-3.1-moderate-aws-foundations-cis-overlay
 bundle install
 cd ..
