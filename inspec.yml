@@ -12,7 +12,7 @@ depends:
   git: https://github.com/mitre/cis-aws-foundations-baseline.git
   branch: master
   
-attributes:
+inputs:
   - name: aws_key_age
     description: 'The maximum allowed key age'
     type: numeric
