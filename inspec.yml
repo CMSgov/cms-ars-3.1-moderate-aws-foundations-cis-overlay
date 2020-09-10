@@ -1,29 +1,32 @@
-name: cms-ars3.1-cis-aws-foundations-baseline
-title: cms-ars3.1-cis-aws-foundations-baseline
+name: cms-ars3.1-aws-foundations-cis-baseline
+title: cms-ars3.1-aws-foundations-cis-baseline
 maintainer: CMS InSpec Dev team
 copyright: 
 copyright_email: 
 license: Apache-2.0
-summary: "CMS ARS3.1 Overlay against CIS AWS Foundations Benchmark Baseline InSpec Compliance Profile"
-version: 0.2.1
+summary: "CMS ARS 3.1 Overlay against CIS AWS Foundations Benchmark Baseline InSpec Compliance Profile"
+version: 1.2.0
 
 depends:
-- name: cis-aws-foundations-baseline
-  git: https://github.com/mitre/cis-aws-foundations-baseline.git
+- name: aws-foundations-cis-baseline
+  git: https://github.com/mitre/aws-foundations-cis-baseline.git
   branch: master
   
 inputs:
   - name: aws_key_age
     description: 'The maximum allowed key age'
-    type: numeric
+    type: Numeric
     default: 60
+    profile: aws-foundations-cis-baseline
 
   - name: pwd_length
     description: 'Required password length'
-    type: numeric
+    type: Numeric
     default: 12
+    profile: aws-foundations-cis-baseline
 
   - name: aws_cred_age
     description: 'The maximum allowed IAM account age'
-    type: numeric
+    type: Numeric
     default: 60
+    profile: aws-foundations-cis-baseline
