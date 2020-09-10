@@ -9,8 +9,7 @@ version: 1.2.0
 
 depends:
 - name: aws-foundations-cis-baseline
-  git: https://github.com/mitre/aws-foundations-cis-baseline.git
-  branch: master
+  url: https://github.com/mitre/aws-foundations-cis-baseline/archive/master.tar.gz
   
 inputs:
   - name: aws_key_age
