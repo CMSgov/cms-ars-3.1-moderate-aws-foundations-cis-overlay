@@ -112,12 +112,11 @@ $ export <span class="hljs-comment">AWS_REGION=</span><span class="hljs-comment"
 </p>
 <pre><code><span class="hljs-built_in">mkdir</span> profiles
 <span class="hljs-keyword">cd</span> profiles
-git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/mitre/aws-foundations-cis-baseline.git
 git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/CMSgov/cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay.git
 <span class="hljs-keyword">cd</span> cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay
 bundle install
 <span class="hljs-keyword">cd</span> ..
-inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --attrs=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
+inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --input-file=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
 </code></pre>
 <p>For every successive run, follow these steps to always have the latest version of this overlay and dependent
   profiles:</p>
@@ -127,7 +126,7 @@ git pull
 git pull
 bundle install
 <span class="hljs-keyword">cd</span> ..
-inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --attrs=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
+inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --input-file=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
 </code></pre>
 <h2 id="authors">Authors</h2>
 <ul>
