@@ -105,12 +105,11 @@ When the __"runner"__ host uses this profile overlay for the first time, follow 
 ```
 mkdir profiles
 cd profiles
-git clone https://github.com/mitre/aws-foundations-cis-baseline.git
 git clone https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay.git
 cd cms-ars-3.1-moderate-aws-foundations-cis-overlay
 bundle install
 cd ..
-inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --attrs=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
@@ -121,7 +120,7 @@ cd ../<overlay-repo>
 git pull
 bundle install
 cd ..
-inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --attrs=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
+inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
 
 ## Authors
