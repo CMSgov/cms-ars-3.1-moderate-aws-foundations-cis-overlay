@@ -107,7 +107,6 @@ mkdir profiles
 cd profiles
 git clone https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay.git
 cd cms-ars-3.1-moderate-aws-foundations-cis-overlay
-bundle install
 cd ..
 inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
@@ -118,7 +117,6 @@ cd profiles/<baseline-repo>
 git pull
 cd ../<overlay-repo>
 git pull
-bundle install
 cd ..
 inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```

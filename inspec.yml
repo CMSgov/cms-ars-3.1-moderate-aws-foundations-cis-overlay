@@ -6,6 +6,7 @@ copyright_email:
 license: Apache-2.0
 summary: "CMS ARS 3.1 Overlay against CIS AWS Foundations Benchmark Baseline InSpec Compliance Profile"
 version: 1.2.0
+inspec_version: ">= 4.0"
 
 depends:
 - name: aws-foundations-cis-baseline

@@ -114,7 +114,6 @@ $ export <span class="hljs-comment">AWS_REGION=</span><span class="hljs-comment"
 <span class="hljs-keyword">cd</span> profiles
 git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/CMSgov/cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay.git
 <span class="hljs-keyword">cd</span> cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay
-bundle install
 <span class="hljs-keyword">cd</span> ..
 inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --input-file=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
 </code></pre>
@@ -124,7 +123,6 @@ inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundation
 git pull
 <span class="hljs-keyword">cd</span> ../<span class="hljs-symbol">&lt;overlay-repo&gt;</span>
 git pull
-bundle install
 <span class="hljs-keyword">cd</span> ..
 inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --input-file=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;
 </code></pre>
