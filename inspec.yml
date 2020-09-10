@@ -16,17 +16,17 @@ inputs:
   - name: aws_key_age
     description: 'The maximum allowed key age'
     type: Numeric
-    default: 60
+    value: 60
     profile: aws-foundations-cis-baseline
 
   - name: pwd_length
     description: 'Required password length'
     type: Numeric
-    default: 12
+    value: 12
     profile: aws-foundations-cis-baseline
 
   - name: aws_cred_age
     description: 'The maximum allowed IAM account age'
     type: Numeric
-    default: 60
+    value: 60
     profile: aws-foundations-cis-baseline
