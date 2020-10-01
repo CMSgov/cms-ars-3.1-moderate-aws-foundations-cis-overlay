@@ -117,9 +117,7 @@ inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundation
 </code></pre>
 <p>For every successive run, follow these steps to always have the latest version of this overlay and dependent
   profiles:</p>
-<pre><code><span class="hljs-keyword">cd</span> profiles/<span class="hljs-symbol">&lt;baseline-repo&gt;</span>
-git pull
-<span class="hljs-keyword">cd</span> ../<span class="hljs-symbol">&lt;overlay-repo&gt;</span>
+<pre><code><span class="hljs-keyword">cd</span> cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay
 git pull
 <span class="hljs-keyword">cd</span> ..
 inspec exec cms-ars-<span class="hljs-number">3.1</span>-moderate-aws-foundations-cis-overlay --input-file=&lt;path_to_your_inputs_file/name_of_your_inputs_file.yml&gt; --target aw<span class="hljs-variable">s:</span>// --reporter=cli json:&lt;path_to_your_output_file/name_of_your_output_file.json&gt;

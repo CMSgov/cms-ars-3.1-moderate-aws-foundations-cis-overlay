@@ -111,9 +111,7 @@ inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_
 For every successive run, follow these steps to always have the latest version of this overlay and dependent profiles:
 
 ```
-cd profiles/<baseline-repo>
-git pull
-cd ../<overlay-repo>
+cd cms-ars-3.1-moderate-aws-foundations-cis-overlay
 git pull
 cd ..
 inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
