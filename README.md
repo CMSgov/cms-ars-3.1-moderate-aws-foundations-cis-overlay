@@ -1,5 +1,5 @@
 # cms-ars-3.1-moderate-aws-foundations-cis-overlay
-InSpec profile overlay to validate the secure configuration of vendor Amazon Web Services against [CIS'](https://www.cisecurity.org/cis-benchmarks/) Amazon Web Services Foundations Benchmark Version 1.2.0 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categorized as Moderate.
+InSpec profile overlay to validate the secure configuration of Amazon Web Services against [CIS'](https://www.cisecurity.org/cis-benchmarks/) Amazon Web Services Foundations Benchmark Version 1.2.0 tailored for [CMS ARS 3.1](https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication.html) for CMS systems categorized as Moderate.
 
 ## Getting Started  
 It is intended and recommended that InSpec and this profile overlay be run from a __"runner"__ host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) against the target.
