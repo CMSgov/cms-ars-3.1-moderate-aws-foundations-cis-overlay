@@ -74,7 +74,7 @@ exception_bucket_list: ["exception_bucket_name"]
 exception_security_group_list: ["exception_security_group_name"]
 ```
 
-## Running This Overlay
+## Running This Overlay Directly from Github
 Prior to running this overlay, certain credentials and permissions need to be established for the AWS CLI to work properly. 
 
 1. The IAM account used to run this profile against the AWS environment needs to be attached through a group or role with at least `AWS IAM "ReadOnlyAccess" Managed Policy`. 
@@ -124,13 +124,13 @@ inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_
 ```
 
 ## Authors
-* Eugene Aronne
-* Danny Haynes
+* Eugene Aronne - [ejaronne](https://github.com/ejaronne)
+* Danny Haynes - [djhaynes](https://github.com/djhaynes)
 
 ## Special Thanks
-* Rony Xavier
-* Aaron Lippold
-* Shivani Karikar
+* Rony Xavier - [rx294](https://github.com/rx294)
+* Aaron Lippold - [aaronlippold](https://github.com/aaronlippold)
+* Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
 
 ### Additional References
 
