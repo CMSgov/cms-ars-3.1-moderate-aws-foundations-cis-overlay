@@ -154,9 +154,10 @@ The JSON InSpec results file may also be loaded into a __[full heimdall server](
 * Aaron Lippold - [aaronlippold](https://github.com/aaronlippold)
 * Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
 
-### Additional References
+## Contributing and Getting Help
+To report a bug or feature request, please open an [issue](https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay/issues/new).
 
-### License 
+## License 
 
 * This project is dual-licensed under the terms of the Apache license 2.0 (apache-2.0)
 * This project is dual-licensed under the terms of the Creative Commons Attribution Share Alike 4.0 (cc-by-sa-4.0)
