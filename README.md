@@ -112,6 +112,11 @@ Furthermore, to generate credentials using an AWS Profile you will need to use t
 # How to run
 inspec exec https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay/archive/master.tar.gz --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
+
+### Different Run Options
+
+  [Full exec options](https://docs.chef.io/inspec/cli/#options-3)
+  
 ## Running This Overlay from a local Archive copy
 If your runner is not always expected to have direct access to GitHub, use the following steps to create an archive bundle of this overlay and all of its dependent tests:
 
