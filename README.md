@@ -116,7 +116,7 @@ inspec exec https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-o
 ### Different Run Options
 
   [Full exec options](https://docs.chef.io/inspec/cli/#options-3)
-  
+
 ## Running This Overlay from a local Archive copy
 If your runner is not always expected to have direct access to GitHub, use the following steps to create an archive bundle of this overlay and all of its dependent tests:
 
@@ -138,6 +138,12 @@ git pull
 cd ..
 inspec exec cms-ars-3.1-moderate-aws-foundations-cis-overlay --input-file=<path_to_your_inputs_file/name_of_your_inputs_file.yml> --target aws:// --reporter=cli json:<path_to_your_output_file/name_of_your_output_file.json>
 ```
+
+## Using Heimdall for Viewing the JSON Results
+
+The JSON results output file can be loaded into __[heimdall-lite](https://heimdall-lite.mitre.org/)__ for a user-interactive, graphical view of the InSpec results. 
+
+The JSON InSpec results file may also be loaded into a __[full heimdall server](https://github.com/mitre/heimdall)__, allowing for additional functionality such as to store and compare multiple profile runs.
 
 ## Authors
 * Eugene Aronne - [ejaronne](https://github.com/ejaronne)
