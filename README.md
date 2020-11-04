@@ -148,11 +148,11 @@ The JSON InSpec results file may also be loaded into a __[full heimdall server](
 ## Authors
 * Eugene Aronne - [ejaronne](https://github.com/ejaronne)
 * Danny Haynes - [djhaynes](https://github.com/djhaynes)
+* Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
 
 ## Special Thanks
 * Rony Xavier - [rx294](https://github.com/rx294)
 * Aaron Lippold - [aaronlippold](https://github.com/aaronlippold)
-* Shivani Karikar - [karikarshivani](https://github.com/karikarshivani)
 
 ## Contributing and Getting Help
 To report a bug or feature request, please open an [issue](https://github.com/CMSgov/cms-ars-3.1-moderate-aws-foundations-cis-overlay/issues/new).
