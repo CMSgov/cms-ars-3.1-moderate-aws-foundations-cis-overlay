@@ -159,11 +159,12 @@ To report a bug or feature request, please open an [issue](https://github.com/CM
 
 ### NOTICE
 
-© 2020 The MITRE Corporation.
+© 2018-2020 The MITRE Corporation.
 
 Approved for Public Release; Distribution Unlimited. Case Number 18-3678.
 
-### NOTICE
+### NOTICE 
+
 MITRE hereby grants express written permission to use, reproduce, distribute, modify, and otherwise leverage this software to the extent permitted by the licensed terms provided in the LICENSE.md file included with this project.
 
 ### NOTICE  
@@ -174,5 +175,6 @@ No other use other than that granted to the U. S. Government, or to those acting
 
 For further information, please contact The MITRE Corporation, Contracts Management Office, 7515 Colshire Drive, McLean, VA  22102-7539, (703) 983-6000.
 
-### NOTICE
-DISA STIGs are published by DISA IASE, see: https://iase.disa.mil/Pages/privacy_policy.aspx
+### NOTICE 
+
+CIS Benchmarks are published by the Center for Internet Security (CIS), see: https://www.cisecurity.org/.
