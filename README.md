@@ -20,18 +20,6 @@ The following inputs must be configured in an inputs ".yml" file for the profile
 # Description: Default AWS region
 default_aws_region: 'us-east-1'
 
-# Used by InSpec check 1.4
-# Description: Maximum aws key age
-aws_key_age: 60
-
-# Used by InSpec check 1.9
-# Description: Password length
-pwd_length: 12
-
-# Used by InSpec check 1.11
-# Description: Maximum IAM account age
-aws_cred_age: 60
-
 # Used by InSpec check 2.5
 # Description: Config service list and settings in all relevant regions
 config_delivery_channels:
