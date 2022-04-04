@@ -5,7 +5,7 @@ copyright:
 copyright_email: 
 license: Apache-2.0
 summary: "CMS ARS 3.1 Moderate Overlay InSpec Validation Profile for AWS Foundations CIS"
-version: 1.2.4
+version: 1.2.5
 inspec_version: ">= 4.0"
 
 depends:
